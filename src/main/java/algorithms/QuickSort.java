@@ -38,18 +38,14 @@ public class QuickSort {
             if (list.get(i) < pivot) {
                 border++;
                 if (border != i) {
-                    int tmp = list.get(i);
-                    list.set(i, list.get(border));
-                    list.set(border, tmp);
+                    SortingUtils.swap(list, i, border);
                 }
             }
             i++;
         }
         border++;
         if (border != right) {
-            int tmp = list.get(right);
-            list.set(right, list.get(border));
-            list.set(border, tmp);
+            SortingUtils.swap(list, right, border);
         }
         return border;
     }
