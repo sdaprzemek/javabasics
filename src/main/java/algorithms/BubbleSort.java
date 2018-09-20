@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BubbleSort {
-    private final static int ARRAY_SIZE_TO_GENERATE = 40;
+    private static final int ARRAY_SIZE_TO_GENERATE = 40;
 
     public static void main(String[] args) {
         List<Integer> array = new ArrayList<>();
